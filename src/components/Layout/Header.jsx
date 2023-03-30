@@ -7,7 +7,7 @@ function Header(props) {
     <>
       <header className={classes.header}>
         <h1>SefaMeals</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onShow={props.onShowModal} />
       </header>
       <div className={classes["main-image"]}>
         <img src={Meals} alt="logo" />
